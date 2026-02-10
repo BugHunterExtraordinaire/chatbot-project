@@ -1,9 +1,19 @@
 #root {
-  display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 45%;
-  flex-direction: column;
+  width: 90%;
   height: 100vh;
   align-items: center;
+  display: grid; 
+  grid-template-areas: "messages"
+                        "chat-input";
+    grid-template-rows: 1fr auto;
+}
+@media (min-width: 768px) {
+  #root {
+    grid-template-areas: "chat-input"
+                         "messages";
+    grid-template-rows: auto 1fr;
+    width: 45%;
+  }
 }

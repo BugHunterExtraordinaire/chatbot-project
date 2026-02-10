@@ -28,7 +28,7 @@ export default function ChatInput({ chatMessages, setChatMessages }) {
              placeholder="Send a message to Chatbot" 
              value={value} 
              ref={ref} 
-             onChange={() => setValue(ref.current.value)} 
+             onChange={(e) => setValue(e.target.value)} 
              onKeyDown={(e) => e.key === "Enter" && sendMessage()}/>
       <button onClick={sendMessage}>Send</button>
     </section>

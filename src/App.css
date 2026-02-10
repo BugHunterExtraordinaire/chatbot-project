@@ -2,7 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  height: 100vh;
+  height: 100dvh;
   align-items: center;
   display: grid; 
   grid-template-areas: "messages"

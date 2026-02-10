@@ -11,8 +11,8 @@ export default function ChatMessages({ chatMessages }) {
     }
   }, [chatMessages]);
   return (
-    <div className="chat-messages-container" ref={ref}>
+    <section className="chat-messages-container" ref={ref}>
       {chatMessages.map((chatMessage) => <ChatMessage chatMessage={chatMessage} />)}
-    </div>
+    </section>
   );
 }

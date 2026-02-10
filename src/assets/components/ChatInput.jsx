@@ -22,14 +22,15 @@ export default function ChatInput({ chatMessages, setChatMessages }) {
   }
 
   return (
-    <div className="chat-input-container">
+    <section className="chat-input-container">
       <input type="text" 
+             aria-label="message box"
              placeholder="Send a message to Chatbot" 
              value={value} 
              ref={ref} 
              onChange={() => setValue(ref.current.value)} 
              onKeyDown={(e) => e.key === "Enter" && sendMessage()}/>
       <button onClick={sendMessage}>Send</button>
-    </div>
+    </section>
   );
 }

@@ -5,9 +5,9 @@ import "../styles/ChatMessage.css";
 
 export default function ChatMessage({ chatMessage }) {
   const time = dayjs().format('h:mma');
-  const { sender, message, key } = chatMessage;
+  const { sender, message } = chatMessage;
   return (
-    <div key={key} 
+    <div
          className={`chat-message-container ${sender}-container`}
          aria-label={`${sender} message`}>
       {sender === 'bot' ?
